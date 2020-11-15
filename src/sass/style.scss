@@ -1,7 +1,9 @@
 @import "https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css";
 @import "https://necolas.github.io/normalize.css/8.0.1/normalize.css";
 @import "./variable";
+@import "./mixin"
 @import "./default";
 @import "./layout";
 @import "./header";
 @import "./navigation";
+@import "./season";

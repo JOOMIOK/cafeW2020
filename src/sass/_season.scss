@@ -1,0 +1,101 @@
+@import "./mixin";
+
+// 시즌컨테이너
+.season-container{
+  background-color: $season-bg-color;
+  color: $season-text-color;
+}
+//음료소개 단락 공통
+[class^="season__description-text"]{   //season__description-text 로 시작하는 모든 css 해당 됨
+  display: block;
+}
+.season{
+  padding: 83px 919px 120px 119px;
+  text-align: center;
+  position: relative;
+
+// 음료 소개 단락
+&__description{
+ &-text1, &-text2{
+   font-size: 4rem;
+ }
+ &-text2{
+   @include flexbox($ma:space-between);
+   &::before,
+   &::after{
+     content: "";
+     display: block;
+     width: 160px;
+     height: 1px;
+     background-color: $season-text-color;
+   }
+ }
+ &-text3, &-text4{
+   font-size: 9rem;
+   font-weight: 700;
+   color: $season-text-color2;
+ }
+ &-text1, &-text3, &-text4{
+   text-transform: uppercase;//대문자로 전환
+ }
+ &-text5{
+   font-size: 2.8rem;
+   padding-bottom: 20px;
+   border-bottom: 1px solid currentColor;
+ }
+} 
+ // 음료이미지
+&__beverage-list{
+  position: absolute;
+  right: 0;
+  top:0;
+  }
+  
+  //음료정보 자세히 보기 링크
+  &__more{
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $season-text-color2;
+    padding: 10px 25px;
+    border: 1px solid currentColor;
+  }
+}
+.season__beverage-list{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.season__description{
+    margin-bottom: 50px;
+  padding-bottom: 20px;
+}
+.season__description-text1,
+.season__description-text2{
+   font-size:  4rem;
+ }
+ .season__description-text2{
+   width: 100%;
+ }
+ .season__description-text2 span{
+  margin: 0 20px;
+}
+
+.season__description-text3,
+.season__description-text4{
+   font-size:  9rem;
+   font-size: 700;
+ }
+.season__description-text5{
+   font-size:  2.8rem;
+ }
+
+ //음료 정보 자세히 보기 MORE
+.season__more{
+  display: inline;
+  font-size:  1.6rem;
+  font-weight: 700;
+  color: $season-text-color2;
+  padding: 10px 20px;
+  border: 1px solid red;
+} 
