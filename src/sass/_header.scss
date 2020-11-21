@@ -1,8 +1,7 @@
 @import "./mixin";
 // 헤더 컨테이너
 .header-container{
-  background-color: darkblue;
-  border-bottom: 1px solid $header-border-color;
+    border-bottom: 1px solid $header-border-color;
 }
 // 헤더
 .header{
@@ -64,7 +63,6 @@
          cursor: pointer;
          @include boxSize(40px, 40px);
          background: url(./../images/icon-search.svg) no-repeat 0 0 / 100% 100%;
-         background-color: red;
         
       }
     }

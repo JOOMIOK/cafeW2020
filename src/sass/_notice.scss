@@ -1,0 +1,48 @@
+@import "./mixin";
+
+.notice-container{
+  position: relative;
+}
+.notice{
+  $box-height: 60px;
+  $list-height: 24px;
+
+  @include flexbox($ma:space-between) ;
+  padding: 0 15px 0 30px;
+  width: 420px;
+  height: $box-height;
+  border-radius: $box-height/2;  // 높이의 반 절 값
+  position: absolute;
+  top:-94px;
+  left: 50%;  //중간정열을 위한작업  포지션 줘서 마진오토 안됨
+  transform: translateX(-50%); // 중앙정렬위해
+  background-color: $notice-bg-color;
+
+   &__inform-list{
+     margin: 0;
+     height: $list-height;
+     overflow: hidden;
+   }
+   &__inform-item{
+     height: &list-height;
+     @include flexbox;
+     &::before{
+      content: "";
+      width: 26px;
+      height: $list-height;
+      background: url(./../images/icon-sound.svg) no-repeat 0 0 /100% 100% ;
+      margin-right: 20px;
+    }
+    a{
+      width: 160px;
+      margin-right: 20px;
+      white-space: nowrap;       // 영역 좁으면 글자 점점점 ... 으로 표시
+      overflow: hidden;         //
+      text-overflow: ellipsis;  //
+    }
+  } 
+  .close-button{
+      border: 0 ;
+      background-color: transparent;
+   }
+}  
