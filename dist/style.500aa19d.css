@@ -345,24 +345,96 @@ body *, body *::before, body *::after {
 .reserve__description {
   font-size: 1.6rem;
   width: 192px;
-  line-height: 0.3125px;
+  line-height: 1.3125;
 }
 .reserve__more {
-  display: inlie-block;
-  border: 2px solid #a37356;
+  display: inline-block;
+  border: 2px solid #fff;
   padding: 10px 25px;
   margin-top: 20px;
 }
 .reserve__bg-container {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 124px;
+  left: 120px;
 }
 .reserve__bg-container path {
   fill: #fff;
 }
 .reserve__bg-container line {
   stroke: #fff;
+}
+
+.pick-container {
+  background: linear-gradient(105.54deg, rgba(32, 23, 1, 0.5) 36.2%, rgba(95, 57, 35, 0.2) 74.71%), url(/image10.3fc7f116.png) no-repeat 50% 50%/cover;
+}
+
+.pick {
+  position: relative;
+  padding: 110px 925px 110px 110px;
+  text-align: right;
+}
+.pick .line-break {
+  display: block;
+}
+.pick__title {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 0.8;
+}
+.pick--large {
+  font-size: 15.5rem;
+}
+.pick--medium {
+  font-size: 13.3rem;
+}
+.pick--small {
+  font-size: 7.4rem;
+}
+.pick__description {
+  font-size: 3.2rem;
+  line-height: 1.3;
+  font-weight: 700;
+  margin-top: 44px;
+  margin-bottom: 0;
+}
+.pick__good-list {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.pick__more {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 10px 25px;
+  border: 1px solid currentColor;
+}
+.pick__photo-container {
+  position: absolute;
+  top: 150px;
+  left: 600px;
+  display: flex;
+}
+.pick__photo-container .photo1 {
+  transform: translate(0, 40px) rotate(-9.21deg);
+}
+.pick__photo-container .photo2 {
+  transform: translate(-80px, 0) rotate(8.71deg);
+}
+.pick__photo-container .photo3 {
+  transform: translate(-220px, 150px) rotate(29.6deg);
+}
+.pick__photo-image {
+  width: 284px;
+  padding: 10px;
+  background-color: #fff;
+}
+.pick__photo-image img {
+  max-width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=/style.500aa19d.css.map */
